@@ -1,0 +1,40 @@
+<div class="site-header">
+  <div class="container">
+      <div class="main-header">
+          <div class="row">
+              <div class="col-md-4 col-sm-6 col-xs-10">
+                  <div class="logo">
+                      <a href="#">
+                          <img src="assets/images/logo.png" alt="travel html5 template" title="travel html5 template">
+                      </a>
+                  </div> <!-- /.logo -->
+              </div> <!-- /.col-md-4 -->
+
+          </div> <!-- /.row -->
+      </div> <!-- /.main-header -->
+
+  </div> <!-- /.container -->
+</div> <!-- /.site-header -->
+
+<div class="page-top" id="templatemo_events">
+</div> <!-- /.page-header -->
+
+<div class="appContent">
+  <h1>Amadeus search</h1>
+
+  <form name="frmSearch" id="frmSearch" onsubmit="loadFlights('https://devoxx2021-redhat-amadeus-contest-api.comwork.io'); return false;">
+      Origin: <select id="origin">
+      <option value="CDG">Paris CDG</option><option value="ORY">Paris Orly</option><option value="TUN">Tunis</option><option value="CMN">Casablanca</option><option value="CAI">Cairo</option><option value="MED">Madinah</option><option value="JED">Djeddah</option><option value="RUH">Riyadh</option><option value="LCY">London</option><option value="SXF">Berlin</option><option value="SYD">Sydney</option><option value="BKK">Bankok</option><option value="SIN">Singapor</option><option value="HKG">Hong Kong</option>                </select>&nbsp;
+
+      Destination: <select id="destination">
+      <option value="CDG">Paris CDG</option><option value="ORY">Paris Orly</option><option value="TUN">Tunis</option><option value="CMN">Casablanca</option><option value="CAI">Cairo</option><option value="MED">Madinah</option><option value="JED">Djeddah</option><option value="RUH">Riyadh</option><option value="LCY">London</option><option value="SXF">Berlin</option><option value="SYD">Sydney</option><option value="BKK">Bankok</option><option value="SIN">Singapor</option><option value="HKG">Hong Kong</option>                </select>&nbsp;
+
+      Departure date: <select id="departure_date">
+      <option value="2022-06-07">2022-06-07</option><option value="2022-06-08">2022-06-08</option><option value="2022-06-09">2022-06-09</option><option value="2022-06-10">2022-06-10</option><option value="2022-06-11">2022-06-11</option><option value="2022-06-12">2022-06-12</option><option value="2022-06-13">2022-06-13</option><option value="2022-06-14">2022-06-14</option><option value="2022-06-15">2022-06-15</option><option value="2022-06-16">2022-06-16</option>                </select>&nbsp;
+      <input name="count" type="button" value="Search" onclick="loadFlights('https://devoxx2021-redhat-amadeus-contest-api.comwork.io');">
+  </form>
+<br />
+<div id="contentTable"></div>
+</div>
+
+
